@@ -38,7 +38,29 @@ body {
 body {
 	background-color: var(--white);
 	font-family: "Henny Penny", system-ui;
-	}
+}
+h2 {
+	font-family: "Henny Penny", system-ui;
+	color: var(--blue);
+  text-shadow: 3px 3px 6px var(--sky), 0 0 15px var(--red);
+	font-size: 1.4rem;
+	font-weight: 500;
+	text-align: left;
+	padding: 1rem;
+}
+
+p {
+  color: var(--black);
+  font-family: system-ui;
+}
+
+.logotext {
+	font-family: "Henny Penny", system-ui;
+  color: var(--blue);
+  text-shadow: 3px 3px 6px var(--sky), 0 0 15px var(--red);
+}
+/* END OF main body */
+
 
 /* Google Font "Henny Penny" */
 .henny-penny-regular {
@@ -87,6 +109,7 @@ body {
 }
 
 .hero-text p {
+  font-family: "Henny Penny", system-ui;
   font-size: 2rem;
   font-weight: 600;
   margin: 0 0 20px 0;
@@ -128,3 +151,147 @@ body {
 	display:none;
 }
 /* END OF navigation bar elements only */
+
+
+/* flex elements */
+.flex-section {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 1.5rem auto;
+    padding: 0 1.5rem;
+}
+
+.flex-left {
+    flex: 0 0 35%;
+    max-width: 380px;
+}
+
+.flex-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.flex-content {
+    flex: 1;
+    min-width: 0;
+    padding-top: 0.5rem;
+}
+
+.flex-content h2 {
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.flex-content p {
+    margin-top: 0;
+    line-height: 1.7;
+    max-width: 65ch;
+}
+
+.flex-section.image-right {
+    flex-direction: row-reverse;
+}
+
+.flex-section.image-right .flex-content {
+    padding-left: 1rem;
+}
+/* END of flex elements */
+
+/* Some edits to the slideshow element */
+.custom-slide-btn {
+    background-color: var(--black) !important; /* since the w3-black is ugly IMO */
+    color: var(--white) !important;
+    border: none;
+}
+
+.custom-slide-btn:hover {
+    background-color: var(--blue) !important;
+    color: var(--white) !important;
+}
+/* END OF slideshow elements part */
+
+/* footer content */
+footer {
+    background-color: var(--blue);
+    font-family: system-ui;
+    color: var(--white);
+    padding: 2.5rem 1.5rem 1.5rem;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 220px;
+    text-align: left;
+}
+
+.footer-section h3 {
+    color: var(--sky);
+    text-shadow: 3px 3px 6px var(--black), 0 0 15px var(--white);
+    margin-bottom: 1rem;
+    font-family: "Henny Penny", system-ui;
+}
+
+.footer-section p {
+    color: var(--white);
+    font-family: system-ui;
+}
+
+.footer-section a {
+    color: var(--white);
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: var(--sky);
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s;
+}
+
+.social-links img:hover {
+    transform: scale(1.15);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-section {
+        text-align: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+}
+/* END OF footer part */

@@ -5,7 +5,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home | Magnolia Springs Fall Festival</title>
+        <title>Schedule | Magnolia Springs Fall Festival</title>
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css"> <!-- went with w3.css for this project -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,7 +35,7 @@
             <div class="navbar">
                 <a href="index.html">Home</a> 
                 <a href="about.html">About</a> 
-                <a href="schedule.html">Schedule</a> 
+                <a href="schedule.html">Schedule</a>  
                 <a href="vendors.html">Vendors</a>
                 <a href="artists.html">Artists</a>
                 <a href="participate.html">Participate</a>
@@ -44,34 +44,17 @@
     
         <section>
             <!-- start of normal content section -->
-            <div class="flex-section" id="overview">
-                <div class="flex-left">
-                    <img class="flex-img" src="images/flyover.jpg" alt="Flyover View of Festival">
-                </div>
-                <div class="flex-content">
-                    <h2>Overview of Magnolia Springs 2024 Fall Festival</h2>
-                    <p>Welcome to the official website of the <span class="logotext">Magnolia Springs 2024 Fall Festival</span>! This beloved annual event celebrates the beauty of fall in our charming Southern town. Held on the second Friday and Saturday in October, the festival transforms our historic town square into a vibrant celebration filled with live music, delicious food trucks, unique arts and crafts vendors, and a bustling farmers' market. Whether you're a local or visiting from out of town, the Magnolia Springs Fall Festival offers something for everyone.</p>
-                </div>
+
+            <div>
+                <h2> [ drop in some content here ] </h2>
+                <p> [ drop in some content here ] </p>
+                <p> [ drop in some content here ] </p>
+                <p> [ drop in some content here ] </p>
+                <p> [ drop in some content here ] </p>
+                <p> [ drop in some content here ] </p>
+                <p> [ etc... ] </p>
             </div>
 
-            <div class="flex-section image-right" id="highlights">
-                <div class="flex-left">
-                    <img class="flex-img" src="images/highlights.jpg" alt="Flyover View of Festival">
-                </div>
-                <div class="flex-content">
-                    <h2>Key Event Highlights</h2>
-                    <p>Enjoy live performances, shop for handmade treasures, taste seasonal treats, and create lasting memories with family and friends. Come experience the warm Southern hospitality and festive atmosphere that make this event a highlight of the fall season!</p>
-                </div>
-            </div>
-            
-            <div class="w3-content w3-display-container"> <!-- slideshow section modified from w3-->
-                <img class="mySlides" src="images/festival-children.jpg" alt="Children Enjoying Festival" style="width:100%">
-                <img class="mySlides" src="images/festival-truck.jpg" alt="People at Foodtruck" style="width:100%">
-                <img class="mySlides" src="images/festival-singers.jpg" alt="Singers Performing at Festival" style="width:100%">
-                <img class="mySlides" src="images/festival-trinkets.jpg" alt="People at a Local Vendors Stand" style="width:100%">
-                <button class="w3-button custom-slide-btn w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-                <button class="w3-button custom-slide-btn w3-display-right" onclick="plusDivs(1)">&#10095;</button>
-            </div>
         </section> <!-- End normal content section -->
 
         <footer> <!-- start footer section -->
@@ -113,27 +96,5 @@
                     </div>
                 </div>
         </footer> <!-- end of footer section -->
-        
-        <script> <!-- some JavaScript from w3 -->
-            var slideIndex = 1;
-            showDivs(slideIndex);
-            function plusDivs(n) {
-                showDivs(slideIndex += n);
-            }
-            function showDivs(n) {
-                var i;
-                var x = document.getElementsByClassName("mySlides");
-                if (n > x.length) {
-                    slideIndex = 1
-                }
-                if (n < 1) {
-                    slideIndex = x.length
-                }
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";  
-                }
-            x[slideIndex-1].style.display = "block";  
-            }
-        </script>
     </body>
 </html>
