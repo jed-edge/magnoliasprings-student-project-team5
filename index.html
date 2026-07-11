@@ -1,139 +1,148 @@
 <!-- Team 5 -->
 <!-- Final Project -->
+<!-- EdgaE Carrillo -->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Home | Magnolia Springs Fall Festival</title>
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css"> <!-- went with w3.css for this project -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="icon" href="images/favicon.png" type="image/png">
-    </head>
-    <body>
-        <!-- Required Educational Notice Banner -->
-        <div class="student-banner" role="status" aria-label="Educational Notice">
-            <p><strong>Notice:</strong> This is a fictional student project for educational purposes only.</p>
-        </div><!--End Required Educational Notice Banner -->
-    
-        <header>
-            <!-- Main Hero Image modified from w3 -->
-            <div class="hero-image">
-                <img src="images/imgtop.jpg" alt="Fall Scene in Rural Georgia" class="hero-bg">
-                <div class="hero-text"> <!-- Text Over the Main Hero Image -->
-                    <h1 class="playpen-sans">Magnolia Springs</h1>
-                    <p>2024 Fall Festival</p>
-                </div>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Magnolia Springs Fall Festival</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css"> <!-- went with w3.css for this project -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+
+<body>
+    <!-- Required Educational Notice Banner -->
+    <div class="student-banner" role="status" aria-label="Educational Notice">
+        <p><strong>Notice:</strong> This is a fictional student project for educational purposes only.</p>
+    </div><!--End Required Educational Notice Banner -->
+
+    <header>
+        <!-- Main Hero Image modified from w3 -->
+        <div class="hero-image">
+            <img src="images/imgtop.jpg" alt="Fall Scene in Rural Georgia" class="hero-bg">
+            <div class="hero-text"> <!-- Text Over the Main Hero Image -->
+                <h1 class="playpen-sans">Magnolia Springs</h1>
+                <p>2024 Fall Festival</p>
             </div>
-        </header> <!-- End hero image -->
-    
-        <nav>
-            <!--Navigation Bar part modified from w3 -->
-            <div class="navbar">
-                <a href="index.html">Home</a> 
-                <a href="about.html">About</a> 
-                <a href="schedule.html">Schedule</a> 
-                <a href="vendors.html">Vendors</a>
-                <a href="artists.html">Artists</a>
+        </div>
+    </header> <!-- End hero image -->
+
+    <nav>
+        <!--Navigation Bar part modified from w3 -->
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="vendors.html">Vendors</a>
+            <a href="artists.html">Artists</a>
+            <a href="participate.html">Participate</a>
+        </div>
+    </nav> <!--Navigation Bar part modified from w3 -->
+
+    <section>
+        <!-- start of normal content section -->
+        <div class="flex-section" id="overview">
+            <div class="flex-left">
+                <img class="flex-img" src="images/flyover.jpg" alt="Flyover View of Festival">
+            </div>
+            <div class="flex-content">
+                <h2>Overview of Magnolia Springs 2024 Fall Festival</h2>
+                <p>Welcome to the official website of the <span class="logotext">Magnolia Springs 2024 Fall
+                        Festival</span>! This beloved annual event celebrates the beauty of fall in our charming
+                    Southern town. Held on the second Friday and Saturday in October, the festival transforms our
+                    historic town square into a vibrant celebration filled with live music, delicious food trucks,
+                    unique arts and crafts vendors, and a bustling farmers' market. Whether you're a local or visiting
+                    from out of town, the Magnolia Springs Fall Festival offers something for everyone.</p>
+            </div>
+        </div>
+
+        <div class="flex-section image-right" id="highlights">
+            <div class="flex-left">
+                <img class="flex-img" src="images/highlights.jpg" alt="Flyover View of Festival">
+            </div>
+            <div class="flex-content">
+                <h2>Key Event Highlights</h2>
+                <p>Enjoy live performances, shop for handmade treasures, taste seasonal treats, and create lasting
+                    memories with family and friends. Come experience the warm Southern hospitality and festive
+                    atmosphere that make this event a highlight of the fall season!</p>
+            </div>
+        </div>
+
+        <div class="w3-content w3-display-container"> <!-- slideshow section modified from w3-->
+            <img class="mySlides" src="images/festival-children.jpg" alt="Children Enjoying Festival"
+                style="width:100%">
+            <img class="mySlides" src="images/festival-truck.jpg" alt="People at Foodtruck" style="width:100%">
+            <img class="mySlides" src="images/festival-singers.jpg" alt="Singers Performing at Festival"
+                style="width:100%">
+            <img class="mySlides" src="images/festival-trinkets.jpg" alt="People at a Local Vendors Stand"
+                style="width:100%">
+            <button class="w3-button custom-slide-btn w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button custom-slide-btn w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+        </div>
+    </section> <!-- End normal content section -->
+
+    <footer> <!-- start footer section -->
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Magnolia Springs 2024 Fall Festival</h3>
+                <p>Second Friday &amp; Saturday in October<br>
+                    Historic Town Square<br>
+                    Magnolia Springs, GA</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a><br>
+                <a href="about.html">About the Festival</a><br>
+                <a href="schedule.html">Schedule</a><br>
+                <a href="vendors.html">Vendors</a><br>
+                <a href="artists.html">Artists</a><br>
                 <a href="participate.html">Participate</a>
             </div>
-        </nav> <!--Navigation Bar part modified from w3 -->
-    
-        <section>
-            <!-- start of normal content section -->
-            <div class="flex-section" id="overview">
-                <div class="flex-left">
-                    <img class="flex-img" src="images/flyover.jpg" alt="Flyover View of Festival">
-                </div>
-                <div class="flex-content">
-                    <h2>Overview of Magnolia Springs 2024 Fall Festival</h2>
-                    <p>Welcome to the official website of the <span class="logotext">Magnolia Springs 2024 Fall Festival</span>! This beloved annual event celebrates the beauty of fall in our charming Southern town. Held on the second Friday and Saturday in October, the festival transforms our historic town square into a vibrant celebration filled with live music, delicious food trucks, unique arts and crafts vendors, and a bustling farmers' market. Whether you're a local or visiting from out of town, the Magnolia Springs Fall Festival offers something for everyone.</p>
-                </div>
-            </div>
 
-            <div class="flex-section image-right" id="highlights">
-                <div class="flex-left">
-                    <img class="flex-img" src="images/highlights.jpg" alt="Flyover View of Festival">
-                </div>
-                <div class="flex-content">
-                    <h2>Key Event Highlights</h2>
-                    <p>Enjoy live performances, shop for handmade treasures, taste seasonal treats, and create lasting memories with family and friends. Come experience the warm Southern hospitality and festive atmosphere that make this event a highlight of the fall season!</p>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Visit our Facebook page">
+                        <img src="images/fb.svg" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com" target="_blank" aria-label="Vist our Instagram page">
+                        <img src="images/ig.svg" alt="Instagram">
+                    </a>
+                    <a href="https://www.x.com" target="_blank" aria-label="X (Twitter)">
+                        <img src="images/x.svg" alt="Visit our X (Twitter) page">
+                    </a>
                 </div>
             </div>
-            
-            <div class="w3-content w3-display-container"> <!-- slideshow section modified from w3-->
-                <img class="mySlides" src="images/festival-children.jpg" alt="Children Enjoying Festival" style="width:100%">
-                <img class="mySlides" src="images/festival-truck.jpg" alt="People at Foodtruck" style="width:100%">
-                <img class="mySlides" src="images/festival-singers.jpg" alt="Singers Performing at Festival" style="width:100%">
-                <img class="mySlides" src="images/festival-trinkets.jpg" alt="People at a Local Vendors Stand" style="width:100%">
-                <button class="w3-button custom-slide-btn w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-                <button class="w3-button custom-slide-btn w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+            <div class="footer-section">
+                <p><strong>Note that this is for Educational Purposes Only.</strong> This is a fictional student project
+                    created for ITEC 2380 Web Development. &copy; 2024 Magnolia Springs Fall Festival.</p>
             </div>
-        </section> <!-- End normal content section -->
+        </div>
+    </footer> <!-- end of footer section -->
 
-        <footer> <!-- start footer section -->
-            <div class="footer-content">
-                    <div class="footer-section">
-                        <h3>Magnolia Springs 2024 Fall Festival</h3>
-                        <p>Second Friday &amp; Saturday in October<br>
-                        Historic Town Square<br>
-                        Magnolia Springs, GA</p>
-                    </div>
-
-                    <div class="footer-section">
-                        <h3>Quick Links</h3>
-                        <a href="index.html">Home</a><br>
-                        <a href="about.html">About the Festival</a><br>
-                        <a href="schedule.html">Schedule</a><br>
-                        <a href="vendors.html">Vendors</a><br>
-                        <a href="artists.html">Artists</a><br>
-                        <a href="participate.html">Participate</a>
-                    </div>
-
-                    <div class="footer-section">
-                        <h3>Follow Us</h3>
-                        <div class="social-links">
-                            <a href="https://www.facebook.com" target="_blank" aria-label="Visit our Facebook page">
-                                <img src="images/fb.svg" alt="Facebook">
-                            </a>
-                            <a href="https://www.instagram.com" target="_blank" aria-label="Vist our Instagram page">
-                                <img src="images/ig.svg" alt="Instagram">
-                            </a>
-                            <a href="https://www.x.com" target="_blank" aria-label="X (Twitter)">
-                                <img src="images/x.svg" alt="Visit our X (Twitter) page">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="footer-section">
-                        <p><strong>Note that this is for Educational Purposes Only.</strong> This is a fictional student project created for ITEC 2380 Web Development. &copy; 2024 Magnolia Springs Fall Festival.</p>
-                    </div>
-                </div>
-        </footer> <!-- end of footer section -->
-        
-        <script> <!-- some JavaScript from w3 -->
-            var slideIndex = 1;
-            showDivs(slideIndex);
-            function plusDivs(n) {
-                showDivs(slideIndex += n);
+    <script> <!-- some JavaScript from w3 -->
+        var slideIndex = 1;
+        showDivs(slideIndex);
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+        function showDivs(n) {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            if (n > x.length) {
+                slideIndex = 1
             }
-            function showDivs(n) {
-                var i;
-                var x = document.getElementsByClassName("mySlides");
-                if (n > x.length) {
-                    slideIndex = 1
-                }
-                if (n < 1) {
-                    slideIndex = x.length
-                }
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";  
-                }
-            x[slideIndex-1].style.display = "block";  
-            }
-        </script>
-    </body>
+            if (n < 1) { slideIndex = x.length } for (i = 0; i < x.length; i++) { x[i].style.display = "none"; } x[slideIndex -
+                1].style.display = "block";
+        } </script>
+</body>
+
 </html>
