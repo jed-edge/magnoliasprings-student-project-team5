@@ -1,100 +1,220 @@
 <!-- Team 5 -->
-<!-- Final Project -->
+<!-- Final Project - Registration Portal -->
+<!-- Edgar Carrillo -->
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Participate | Magnolia Springs Fall Festival</title>
-        <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css"> <!-- went with w3.css for this project -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="icon" href="images/favicon.png" type="image/png">
-    </head>
-    <body>
-        <!-- Required Educational Notice Banner -->
-        <div class="student-banner" role="status" aria-label="Educational Notice">
-            <p><strong>Notice:</strong> This is a fictional student project for educational purposes only.</p>
-        </div><!--End Required Educational Notice Banner -->
-    
-        <header>
-            <!-- Main Hero Image modified from w3 -->
-            <div class="hero-image">
-                <img src="images/imgtop.jpg" alt="Fall Scene in Rural Georgia" class="hero-bg">
-                <div class="hero-text"> <!-- Text Over the Main Hero Image -->
-                    <h1 class="playpen-sans">Magnolia Springs</h1>
-                    <p>2024 Fall Festival</p>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participate | Magnolia Springs Fall Festival</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+
+<body>
+    <!-- Required Educational Notice Banner (Shared Branding Element) -->
+    <div class="student-banner" role="status" aria-label="Educational Notice">
+        <p><strong>Notice:</strong> This is a fictional student project for educational purposes only.</p>
+    </div>
+
+    <header>
+        <!-- Main Hero Image modifide with w3 -->
+        <div class="hero-image">
+            <img src="images/imgtop.jpg" alt="Fall Scene in Rural Georgia" class="hero-bg">
+            <div class="hero-text"> <!--text over the Main Hero Image-->
+                <h1 class="playpen-sans">Magnolia Springs</h1>
+                <p>2024 Fall Festival</p>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <!-- Navigation Bar Structure (Shared Branding Element) -->
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="vendors.html">Vendors</a>
+            <a href="artists.html">Artists</a>
+            <a href="participate.html">Participate</a>
+        </div>
+    </nav>
+
+    <main class="w3-container w3-padding-64">
+
+        <!-- HederIntroduction Blcok -->
+        <div class="w3-content w3-center w3-padding-32" style="max-width: 800px;">
+            <h2>Join Our 2024 Autumn Showcase</h2>
+            <p class="w3-large" style="line-height: 1.8; color: #444; font-family: system-ui;">
+                Are you interested in showcasing your talent or craft at this year's festival? We are currently seeking
+                local food trucks, independent artisans, local farmers, and musical acts to join our two-day town square
+                celebration. Review the space allocations below and submit your application.
+            </p>
+        </div>
+
+        <!-- Canvas table matrix  -->
+        <div class="w3-content w3-padding-32" style="max-width: 950px;">
+            <h3 class="logotext" style="font-size: 1.6rem; margin-bottom: 16px;">Vendor Space Allocations &amp; Tier
+                Fees</h3>
+            <p style="font-family: system-ui; margin-bottom: 24px;">All selected applicants receive dedicated spaces
+                directly within the Historic Town Square layout. Slots are filled on a rolling evaluation system.</p>
+
+            <div class="w3-responsive w3-card-4">
+                <table class="w3-table w3-bordered w3-striped w3-white"
+                    style="font-family: system-ui, Arial, sans-serif; font-size: 1.05rem;">
+                    <thead>
+                        <tr style="background-color: var(--blue); color: var(--white); font-weight: 600;">
+                            <th style="padding: 16px;">Category</th>
+                            <th style="padding: 16px;">Available Slots</th>
+                            <th style="padding: 16px;">Utility Connection</th>
+                            <th style="padding: 16px;">Festival Fee</th>
+                        </tr>
+                    </thead>
+                    <tbody style="color: var(--black);">
+                        <tr>
+                            <td style="padding: 16px; font-weight: 600; color: var(--blue);">Musical Performer</td>
+                            <td style="padding: 16px;">6 Slots Minimum</td>
+                            <td style="padding: 16px;">Full Stage Audio/Power</td>
+                            <td style="padding: 16px; color: var(--red); font-weight: bold; letter-spacing: 0.5px;">
+                                Covered</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 16px; font-weight: 600; color: var(--blue);">Food Truck Station</td>
+                            <td style="padding: 16px;">12 Stations</td>
+                            <td style="padding: 16px;">50A Electrical Hookup</td>
+                            <td style="padding: 16px; font-weight: 600; letter-spacing: 0.5px;">$150.00</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 16px; font-weight: 600; color: var(--blue);">Arts &amp; Crafts Booth
+                            </td>
+                            <td style="padding: 16px;">30 Spaces</td>
+                            <td style="padding: 16px;">Optional 120V Line</td>
+                            <td style="padding: 16px; font-weight: 600; letter-spacing: 0.5px;">$75.00</td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 16px; font-weight: 600; color: var(--blue);">Farmers' Market Stall</td>
+                            <td style="padding: 16px;">20 Stalls</td>
+                            <td style="padding: 16px;">Standard Space Only</td>
+                            <td style="padding: 16px; font-weight: 600; letter-spacing: 0.5px;">$50.00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        \
+        <div class="w3-content w3-padding-16" style="max-width: 950px;">
+            <hr
+                style="border: 0; height: 1px; background: linear-gradient(to right, transparent, var(--blue), transparent);">
+        </div>
+
+        <div class="w3-content w3-padding-32 application-container-box">
+            <div class="w3-card-4 w3-white form-card-wrapper">
+                <!-- Festival Graphic Element -->
+                <div class="form-banner-box">
+                    <img src="images/highlights.jpg" alt="Artisan stalls and decorations at the festival square"
+                        class="form-banner-img">
+                    <div class="form-banner-overlay">
+                        <h3 class="font-brand banner-overlay-title">Sign-Up Application</h3>
+                    </div>
                 </div>
-            </div>
-        </header> <!-- End hero image -->
-    
-        <nav>
-            <!--Navigation Bar part modified from w3 -->
-            <div class="navbar">
-                <a href="index.html">Home</a> 
-                <a href="about.html">About</a> 
-                <a href="schedule.html">Schedule</a>  
-                <a href="vendors.html">Vendors</a>
-                <a href="artists.html">Artists</a>
-                <a href="participate.html">Participate</a>
-            </div>
-        </nav> <!--Navigation Bar part modified from w3 -->
-    
-        <section>
-            <!-- start of normal content section -->
 
-            <div>
-                <h2> [ drop in some content here ] </h2>
-                <p> [ drop in some content here ] </p>
-                <p> [ drop in some content here ] </p>
-                <p> [ drop in some content here ] </p>
-                <p> [ drop in some content here ] </p>
-                <p> [ drop in some content here ] </p>
-                <p> [ etc... ] </p>
+                <!-- Input Matrix Box -->
+                <form action="#" method="POST" class="festival-signup-form">
+                    <p class="form-field-group">
+                        <label class="form-input-label">Full Name / Contact Entity</label>
+                        <input class="w3-input w3-border w3-round-large form-text-override" type="text"
+                            name="applicant_name" placeholder="Ken Pump" required>
+                    </p>
+
+                    <p class="form-field-group">
+                        <label class="form-input-label">Email Address</label>
+                        <input class="w3-input w3-border w3-round-large form-text-override" type="email"
+                            name="applicant_email" placeholder="ken.pump@jackolantern.example.com" required>
+                    </p>
+
+                    <p class="form-field-group">
+                        <label class="form-input-label">Phone Number</label>
+                        <input class="w3-input w3-border w3-round-large form-text-override" type="tel"
+                            name="applicant_phone" placeholder="(478) 555-1031" required>
+                    </p>
+
+                    <p class="form-field-group">
+                        <label class="form-input-label">Showcase Classification</label>
+                        <select class="w3-select w3-border w3-round-large form-select-override" name="applicant_tier"
+                            required>
+                            <option value="" disabled selected>Select your display type</option>
+                            <option value="artist">Live Musician / Attending Artist</option>
+                            <option value="food">Food Truck Vendor</option>
+                            <option value="craft">Arts &amp; Crafts Merchant</option>
+                            <option value="market">Farmers' Market Grower</option>
+                        </select>
+                    </p>
+
+                    <p class="form-field-group-large">
+                        <label class="form-input-label">Inventory Description / Notes</label>
+                        <textarea class="w3-input w3-border w3-round-large form-text-override form-textarea-resize"
+                            name="applicant_description" rows="4"
+                            placeholder="e.g., Homemade pumpkin spice treats, roasted squash bowls, or acoustic autumn folk sets..."></textarea>
+                    </p>
+
+                    <p style="margin: 0;">
+                        <!-- Added a custom class for the dynamic button hover interaction -->
+                        <button type="submit" class="w3-button w3-block w3-round-large festival-submit-btn">
+                            Submit Festival Application
+                        </button>
+                    </p>
+                </form>
             </div>
+        </div>
 
-        </section> <!-- End normal content section -->
-
-        <footer> <!-- start footer section -->
+        <!-- Footer Content Structure (Shared Branding Element) -->
+        <footer>
             <div class="footer-content">
-                    <div class="footer-section">
-                        <h3>Magnolia Springs 2024 Fall Festival</h3>
-                        <p>Second Friday &amp; Saturday in October<br>
+                <div class="footer-section">
+                    <h3>Magnolia Springs 2024 Fall Festival</h3>
+                    <p>Second Friday &amp; Saturday in October<br>
                         Historic Town Square<br>
                         Magnolia Springs, GA</p>
-                    </div>
+                </div>
 
-                    <div class="footer-section">
-                        <h3>Quick Links</h3>
-                        <a href="index.html">Home</a><br>
-                        <a href="about.html">About the Festival</a><br>
-                        <a href="schedule.html">Schedule</a><br>
-                        <a href="vendors.html">Vendors</a><br>
-                        <a href="artists.html">Artists</a><br>
-                        <a href="participate.html">Participate</a>
-                    </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="index.html">Home</a><br>
+                    <a href="about.html">About the Festival</a><br>
+                    <a href="schedule.html">Schedule</a><br>
+                    <a href="vendors.html">Vendors</a><br>
+                    <a href="artists.html">Artists</a><br>
+                    <a href="participate.html">Participate</a>
+                </div>
 
-                    <div class="footer-section">
-                        <h3>Follow Us</h3>
-                        <div class="social-links">
-                            <a href="https://www.facebook.com" target="_blank" aria-label="Visit our Facebook page">
-                                <img src="images/fb.svg" alt="Facebook">
-                            </a>
-                            <a href="https://www.instagram.com" target="_blank" aria-label="Vist our Instagram page">
-                                <img src="images/ig.svg" alt="Instagram">
-                            </a>
-                            <a href="https://www.x.com" target="_blank" aria-label="X (Twitter)">
-                                <img src="images/x.svg" alt="Visit our X (Twitter) page">
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="footer-section">
-                        <p><strong>Note that this is for Educational Purposes Only.</strong> This is a fictional student project created for ITEC 2380 Web Development. &copy; 2024 Magnolia Springs Fall Festival.</p>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com" target="_blank" aria-label="Visit our Facebook page">
+                            <img src="images/fb.svg" alt="Facebook">
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" aria-label="Visit our Instagram page">
+                            <img src="images/ig.svg" alt="Instagram">
+                        </a>
+                        <a href="https://www.x.com" target="_blank" aria-label="X (Twitter)">
+                            <img src="images/x.svg" alt="Visit our X (Twitter) page">
+                        </a>
                     </div>
                 </div>
-        </footer> <!-- end of footer section -->
-    </body>
+
+                <div class="footer-section">
+                    <p><strong>Note that this is for Educational Purposes Only.</strong> This is a fictional student
+                        project
+                        created for ITEC 2380 Web Development. &copy; 2024 Magnolia Springs Fall Festival.</p>
+                </div>
+            </div>
+        </footer>
+
+</body>
+
 </html>
