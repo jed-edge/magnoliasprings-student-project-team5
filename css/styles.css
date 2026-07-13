@@ -59,6 +59,11 @@ p {
   color: var(--blue);
   text-shadow: 3px 3px 6px var(--sky), 0 0 15px var(--red);
 }
+
+li {
+  font-family: system-ui;
+  color: var(--black);
+}
 /* END OF main body */
 
 
