@@ -413,6 +413,275 @@ footer {
   transform: translateY(-2px);
   box-shadow: 0 8px 15px rgba(184, 12, 9, 0.3) !important;
 }
+/* END OF footer part */
 
-/* END OF footer part */
-/* END OF footer part */
+/* ARTISTS PAGE */
+
+/* Main page container */
+.artists-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+/* Meet the Artists heading area */
+.artists-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.artists-header h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.artists-header .intro {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+/* Save the Date banner */
+.festival-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    max-width: 1000px;
+    margin: 2rem auto 3rem;
+    padding: 1.5rem;
+    background-color: #fff8ec;
+    border: 2px dashed var(--red);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(4, 15, 22, 0.15);
+}
+
+.banner-icon {
+    font-size: 3.5rem;
+}
+
+.banner-text {
+    text-align: center;
+}
+
+.banner-text h3 {
+    color: var(--red);
+    font-family: "Henny Penny", system-ui;
+    font-size: 1.8rem;
+    margin: 0 0 0.5rem;
+}
+
+.banner-text p {
+    margin: 0.4rem 0;
+}
+
+.banner-text h4 {
+    color: var(--red);
+    font-family: "Henny Penny", system-ui;
+    font-size: 1.4rem;
+    margin: 0.75rem 0 0;
+}
+
+/* Section heading */
+.artist-section-title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    max-width: 1200px;
+    margin: 2.5rem auto 1rem;
+    padding: 0;
+    font-size: 2rem;
+}
+
+.artist-section-title::after {
+    content: "";
+    flex: 1;
+    height: 2px;
+    background-color: var(--red);
+}
+
+/* Music and artist cards */
+.artist-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+}
+
+.artist-card {
+    background-color: #fffaf1;
+    border: 1px solid #d8c7ae;
+    border-radius: 8px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(4, 15, 22, 0.15);
+    transition: transform 0.25s, box-shadow 0.25s;
+}
+
+.artist-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rgba(4, 15, 22, 0.25);
+}
+
+.artist-card img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    display: block;
+}
+
+.artist-card h3 {
+    color: var(--blue);
+    font-family: "Henny Penny", system-ui;
+    font-size: 1.35rem;
+    margin: 1rem 0 0.4rem;
+    padding: 0 0.75rem;
+}
+
+.artist-card p {
+    margin: 0.4rem 0;
+    padding: 0 1rem;
+    line-height: 1.5;
+}
+
+.artist-card p:last-child {
+    padding-bottom: 1.25rem;
+}
+
+.artist-card strong {
+    color: var(--red);
+}
+
+/* Artisan demonstration cards */
+.demo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    max-width: 1200px;
+    margin: 0 auto 3rem;
+}
+
+.demo-card {
+    background-color: #fff8ec;
+    border: 1px solid #d8c7ae;
+    border-radius: 8px;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(4, 15, 22, 0.12);
+    transition: transform 0.2s;
+}
+
+.demo-card:hover {
+    transform: scale(1.03);
+}
+
+.demo-icon {
+    display: block;
+    font-size: 3rem;
+    margin-bottom: 0.75rem;
+}
+
+.demo-card h3 {
+    color: var(--blue);
+    font-family: "Henny Penny", system-ui;
+    margin: 0 0 0.5rem;
+}
+
+.demo-card p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Bottom festival banner */
+.bottom-banner {
+    max-width: 1200px;
+    margin: 3rem auto 1rem;
+    padding: 3rem 1.5rem;
+    text-align: center;
+    background-color: #fff3dd;
+    border-top: 5px solid var(--red);
+    border-bottom: 5px solid var(--blue);
+    border-radius: 8px;
+    box-shadow: 0 5px 12px rgba(4, 15, 22, 0.18);
+}
+
+.bottom-banner h2 {
+    text-align: center;
+    color: var(--red);
+    font-size: 2rem;
+    margin: 0 0 1rem;
+}
+
+.bottom-banner p {
+    font-size: 1.05rem;
+    margin-bottom: 1.5rem;
+}
+
+.festival-btn {
+    display: inline-block;
+    background-color: var(--blue);
+    color: var(--white);
+    text-decoration: none;
+    font-family: system-ui;
+    font-weight: bold;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+.festival-btn:hover {
+    background-color: var(--red);
+    color: var(--white);
+    transform: scale(1.05);
+}
+
+/* Tablet layout */
+@media screen and (max-width: 900px) {
+    .artist-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .demo-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Mobile layout */
+@media screen and (max-width: 600px) {
+    .artists-page {
+        padding: 1.5rem 1rem;
+    }
+
+    .artists-header h2 {
+        font-size: 2rem;
+    }
+
+    .festival-banner {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .artist-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .demo-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .artist-section-title {
+        font-size: 1.6rem;
+    }
+
+    .artist-card img {
+        height: 250px;
+    }
+
+    .bottom-banner h2 {
+        font-size: 1.6rem;
+    }
+}
+/* END ARTISTS PAGE */
