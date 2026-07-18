@@ -685,3 +685,289 @@ footer {
     }
 }
 /* END ARTISTS PAGE */
+
+/* SCHEDULE PAGE */
+
+.schedule-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1.5rem;
+}
+
+/* Page heading */
+.schedule-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.schedule-header h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin: 0 0 0.5rem;
+}
+
+.schedule-header p {
+    font-size: 1.15rem;
+    margin: 0;
+    color: var(--black);
+}
+
+/* Main schedule layout */
+.schedule-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 240px;
+    gap: 1.5rem;
+    align-items: start;
+    margin-top: 0.5rem;
+}
+
+/* Friday and Saturday cards */
+.day-card {
+    background-color: #fffaf1;
+    border: 1px solid #d8c7ae;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(4, 15, 22, 0.15);
+    transition: box-shadow 0.25s;
+}
+
+.day-card:hover {
+    box-shadow: 0 8px 16px rgba(4, 15, 22, 0.22);
+}
+
+.day-card h3 {
+    margin: 0;
+    padding: 1rem 1.25rem;
+    text-align: center;
+    background-color: var(--blue);
+    color: var(--white);
+    font-family: "Henny Penny", system-ui;
+    font-size: 1.35rem;
+    text-shadow: 2px 2px 5px var(--black);
+}
+
+/* Individual schedule rows */
+.schedule-row {
+    display: grid;
+    grid-template-columns: 85px 36px 1fr 110px;
+    align-items: center;
+    min-height: 56px;
+    border-bottom: 1px solid #ddccb2;
+    transition: background-color 0.2s;
+}
+
+.schedule-row:hover {
+    background-color: #fff3dd;
+}
+
+.schedule-row:last-child {
+    border-bottom: none;
+}
+
+.schedule-row span {
+    padding: 0.7rem 0.45rem;
+    font-family: system-ui;
+}
+
+.event-time {
+    color: var(--red);
+    font-weight: bold;
+    text-align: center;
+    font-size: 0.95rem;
+}
+
+.event-icon {
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.event-name {
+    font-weight: 600;
+    color: var(--black);
+}
+
+.event-location {
+    font-size: 0.88rem;
+    text-align: right;
+    color: var(--blue);
+    padding-right: 0.85rem !important;
+}
+
+/* Music performances */
+.music-event {
+    background-color: #fff4e3;
+}
+
+.music-event:hover {
+    background-color: #ffecd0;
+}
+
+.music-event .event-name,
+.music-event .event-location {
+    color: var(--red);
+    font-weight: bold;
+}
+
+/* Demonstration list */
+.demonstration-card {
+    background-color: #fffaf1;
+    border: 1px solid #d8c7ae;
+    border-radius: 8px;
+    padding-bottom: 0.75rem;
+    box-shadow: 0 4px 10px rgba(4, 15, 22, 0.15);
+}
+
+.demonstration-card h3 {
+    margin: 0 0 0.5rem;
+    padding: 1rem;
+    color: var(--blue);
+    text-align: center;
+    font-family: "Henny Penny", system-ui;
+    font-size: 1.25rem;
+    border-bottom: 2px solid var(--red);
+}
+
+.demonstration-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.55rem 1.25rem;
+    transition: background-color 0.2s;
+}
+
+.demonstration-item:hover {
+    background-color: #fff3dd;
+}
+
+.demonstration-item span {
+    font-size: 1.4rem;
+    width: 1.75rem;
+    text-align: center;
+}
+
+.demonstration-item p {
+    margin: 0;
+    font-weight: 600;
+    font-family: system-ui;
+}
+
+.circus-note {
+    margin: 0.75rem 1rem 0.25rem;
+    padding: 0.85rem 1rem;
+    background-color: #fff3dd;
+    border-top: 2px dashed var(--red);
+    border-radius: 0 0 6px 6px;
+}
+
+.circus-note p {
+    margin: 0;
+    font-family: system-ui;
+    font-size: 0.92rem;
+    line-height: 1.45;
+}
+
+.circus-note p:first-child {
+    margin-bottom: 0.35rem;
+    color: var(--red);
+    font-size: 1rem;
+}
+
+/* Bottom note */
+.schedule-note {
+    max-width: 900px;
+    margin: 2.5rem auto 0;
+    padding: 1.15rem 1.5rem;
+    background-color: var(--blue);
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(4, 15, 22, 0.18);
+}
+
+.schedule-note p {
+    color: var(--white);
+    margin: 0;
+    font-family: system-ui;
+    line-height: 1.5;
+}
+
+/* Tablet layout */
+@media screen and (max-width: 1100px) {
+    .schedule-layout {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .demonstration-card {
+        grid-column: 1 / 3;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.25rem 0.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .demonstration-card h3 {
+        width: 100%;
+        margin-bottom: 0.75rem;
+    }
+
+    .demonstration-item {
+        min-width: 160px;
+    }
+}
+
+/* Mobile layout */
+@media screen and (max-width: 750px) {
+    .schedule-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .demonstration-card {
+        grid-column: auto;
+        display: block;
+    }
+
+    .schedule-row {
+        grid-template-columns: 72px 28px 1fr;
+        min-height: auto;
+        padding: 0.35rem 0;
+    }
+
+    .event-location {
+        grid-column: 3;
+        padding-top: 0 !important;
+        padding-bottom: 0.55rem !important;
+        padding-right: 0.5rem !important;
+        text-align: left;
+        font-size: 0.82rem;
+    }
+
+    .event-name {
+        padding-bottom: 0.15rem !important;
+    }
+}
+
+/* Small phone layout */
+@media screen and (max-width: 450px) {
+    .schedule-page {
+        padding: 1.5rem 1rem;
+    }
+
+    .schedule-header h2 {
+        font-size: 2rem;
+    }
+
+    .day-card h3 {
+        font-size: 1.1rem;
+        padding: 0.85rem 0.75rem;
+    }
+
+    .schedule-row {
+        grid-template-columns: 68px 24px 1fr;
+    }
+
+    .schedule-row span {
+        padding: 0.55rem 0.3rem;
+    }
+}
+
+/* END SCHEDULE PAGE */
